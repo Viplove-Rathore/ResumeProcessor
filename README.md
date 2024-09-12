@@ -1,8 +1,10 @@
 ## ResumeProcessor
+
 ResumeProcessor is a Django project that provides a REST API to process resumes and extract candidate details like first name, email ID, and mobile number. It uses the Django REST Framework and NLP tools to extract relevant information from PDF or Word resumes.
 
 
 ## Table of Contents
+
    :- Project Setup
    
    :- Database Configuration
@@ -18,6 +20,7 @@ ResumeProcessor is a Django project that provides a REST API to process resumes 
 ## Project Setup
 
   Ensure you have the following installed on your local machine:
+  
       Python 3.8+
       
       PostgreSQL
@@ -38,21 +41,21 @@ ResumeProcessor is a Django project that provides a REST API to process resumes 
 
 ## Database Configuration 
  
-    This project uses PostgreSQL as the database for development. Ensure you have PostgreSQL installed and create a database and user with appropriate permissions.Then open Setting.py file , select database section and put all the information for database configuration,
+   This project uses PostgreSQL as the database for development. Ensure you have PostgreSQL installed and create a database and user with appropriate permissions.Then open Setting.py file , select database section and put all the information for database configuration,
+ 
+   DB_NAME=your_database_name
       
-      DB_NAME=your_database_name
+   USER=your_database_user
       
-      USER=your_database_user
+   PASSWORD=your_password
       
-      PASSWORD=your_password
+   HOST=localhost
       
-      HOST=localhost
-      
-      PORT=5432
+   PORT=5432
 
-    Note: To connect with Postgresql Database , i share some youtube video link in References section.
+   Note: To connect with Postgresql Database , i share some youtube video link in References section.
 
-    First you need to migrate our database then start our server for api overview.
+   First you need to migrate database then start server for api overview.
 
     For Migrations use command:
             
@@ -74,13 +77,13 @@ ResumeProcessor is a Django project that provides a REST API to process resumes 
     
     Method: POST
     
-    File: Multipart/form-data (resume)
 
 
 
-## For Testing:
+## Testing:
     
-    A Client.py file is present for api testing. It user Python-Request library for request-response.Share your resume pdf path and send request to the server, in response you get information like ,
+    A Client.py file is present for api testing. It use Python-Request library for request-response.
+    Share your resume file path and send request to the server, in response you get information like ,
 
     {
     
