@@ -19,9 +19,13 @@ ResumeProcessor is a Django project that provides a REST API to process resumes 
 
   Ensure you have the following installed on your local machine:
       Python 3.8+
+      
       PostgreSQL
+      
       Pyresparser
+      
       Django
+      
       Django-RestFramework
 
   Note: Use Python 3.9 for Pyresparser Package.
