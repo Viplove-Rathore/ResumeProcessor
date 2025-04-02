@@ -35,7 +35,7 @@ ResumeProcessor is a Django project that provides a REST API to process resumes 
 
 ## Installation
 
- -> git clone https://github.com/yourusername/ResumeProcessor.git
+ -> git clone https://github.com/Viplove-Rathore/ResumeProcessor.git
  
  -> cd ResumeProcessor
 
